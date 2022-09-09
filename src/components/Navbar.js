@@ -1,4 +1,5 @@
 import React from "react";
+import CartWidget from "./CartWidget";
 const Navbar = () => {
     return (
     <div>
@@ -7,7 +8,7 @@ const Navbar = () => {
     <div className="container-fluid">
         <a className="navbar-brand" href="#">Disfruta Viajando</a>
         <div>
-            <a href=""><img src="https://img.icons8.com/ios-glyphs/30/000000/favorite-cart.png"/> </a>
+            <CartWidget/>
         </div>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
