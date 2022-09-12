@@ -1,9 +1,21 @@
 header{
-  background-color: blueviolet;
   height: 80px;
 }
 
 .titulo{
   font-size: 40px;
   font-weight: bold;
+}
+
+.imagen-container{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 30px;
+  border-color: black;
+}
+
+.imagen-info{
+  width: 80%;
+  height: 100px;
 }
