@@ -19,3 +19,13 @@ header{
   width: 80%;
   height: 100px;
 }
+
+.cardsViajes{
+  margin: 1rem 0;
+  width: 30rem;
+  background-color: rgb(57, 57, 252);
+  text-align: center;
+  border-radius: 2rem;
+  box-shadow: 0 1px 2rem rgb(58, 58, 248);
+  padding-bottom: 1rem;
+}
