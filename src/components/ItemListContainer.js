@@ -5,19 +5,23 @@ import ItemList from "./ItemList";
 const ItemListContainer = (props) => {
 
     const [arrayList, setArrayList] = useState([]);
+    const [loading, setLoading] = useState(false);
 
 
 useEffect(() => {
+    setLoading(true);
     getList()
         .then((response) => setArrayList(response))
         .catch((err) => console.error(err))
-        .finally()
+        .finally(() => setLoading(false))
 }, [])
 
 
     return(
+        <>
         <p>{props.greeting}</p>,
-        <ItemList destinos={arrayList}/>
+        {loading ? <h1>Cargando...</h1> :<ItemList destinos={arrayList}/>}
+        </>
     );
 }
 

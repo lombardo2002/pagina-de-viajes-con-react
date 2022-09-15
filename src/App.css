@@ -23,7 +23,8 @@ header{
 .cardsViajes{
   margin: 1rem 0;
   width: 30rem;
-  background-color: rgb(57, 57, 252);
+  background: rgb(10,252,255);
+  background: linear-gradient(0deg, rgba(10,252,255,1) 0%, rgba(253,132,45,1) 100%);
   text-align: center;
   border-radius: 2rem;
   box-shadow: 0 1px 2rem rgb(58, 58, 248);
