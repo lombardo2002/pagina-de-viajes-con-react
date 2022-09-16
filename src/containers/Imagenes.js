@@ -1,31 +1,25 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Imagen from "../components/imagen";
-import getList from "../utils/getViajes";
-import customFetch from "../utils/customFetch"
+
 
 const Imagenes = () => {
-    const [getList, setData] = useState([])
+    const [getList] = useState([])
 
-    useEffect(() => {
-        customFetch(2000, getList)
-            .then(result => setData(result))
-            .catch(err => console.log(err))
-    }, []);
 
     return(
         <>
         {
-            getList.map(item => (
+            getList.map(data => (
                 <Imagen
-                key={item.id}
-                id={item.id}
-                imagen={item.imagen}
-                destino={item.destino}
-                lugar={item.lugar}
-                hotel={item.hotel}
-                excursiones={item.excursiones}
-                precio={item.precio}
-                boton={item.boton}
+                key={data.id}
+                id={data.id}
+                imagen={data.imagen}
+                destino={data.destino}
+                lugar={data.lugar}
+                hotel={data.hotel}
+                excursiones={data.excursiones}
+                precio={data.precio}
+                boton={data.boton}
                 />
             ))
         }

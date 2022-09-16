@@ -1,4 +1,4 @@
-let is_ok = true
+let is_ok = true;
 let customFetch = (time, array) => {
     return new Promise ((resolve, reject) =>{
         setTimeout(() =>{

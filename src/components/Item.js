@@ -9,6 +9,7 @@ const Item = ({destino}) => {
                 <h3>{destino.destino}</h3>
                 <p>lugar:{destino.lugar}</p>
                 <p>Hotel:{destino.hotel}</p>
+                <p>Excursión:{destino.excursiones}</p>
                 <p>Precio ${destino.precio}</p>
                 <button className="button">Ver mas detalles</button>
             </div>

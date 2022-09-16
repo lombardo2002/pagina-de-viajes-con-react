@@ -1,14 +1,14 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import ItemListContainer from "./components/ItemListContainer";
 import Imagenes from "./containers/Imagenes";
+import ItemDetailContainer from "./components/ItemDetailContainer";
 
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <ItemListContainer greeting="Hace tu Sueño de Viajar una Realidad"/>
+      <ItemDetailContainer/>
       <Imagenes/>
     </>
   );
