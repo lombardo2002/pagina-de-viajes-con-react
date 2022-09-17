@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import ItemDetail from "./ItemDetail";
 import getList from "../utils/getViajes"
-//const { dataFrom } = require ("../utils/getViajes");
-console.log(getList())
+import ItemListContainer from "./ItemListContainer";
+
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
@@ -16,6 +16,7 @@ const ItemDetailContainer = () => {
 
     return(
         <>
+        <ItemListContainer/>
         {cargando ? <cargando/> : <ItemDetail data={data}/>}
         </>
     );

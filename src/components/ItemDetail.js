@@ -39,7 +39,6 @@ const ItemDetail = ({data}) => {
             <div className="precio-css">
                 <h3>${data.precio}</h3>
             </div>
-            <button className="botones-css" onClick={data.detalles}>Ver mas detalles</button>
         </div>
     );
 }
