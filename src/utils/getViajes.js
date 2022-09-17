@@ -5,8 +5,8 @@ const boton = (id) => {
 
 const dataFrom = [
     {
-    id:"1",
-    imagen:`../img/mexicoddlm.jpg`,
+    id:1 ,
+    imagen:`mexicoddlm.jpg`,
     destino:"Argentina",
     lugar:"Provincia de Misiones",
     hotel:"Los Amigos",
@@ -15,7 +15,7 @@ const dataFrom = [
     boton:{boton}
     },
     {
-    id:"2",
+    id:2 ,
     imagen:"../img/mexicoddlm.jpg",
     destino:"México",
     lugar:"",
@@ -25,7 +25,7 @@ const dataFrom = [
     boton:{boton}
     },
     {
-    id:"3",
+    id: 3 ,
     imagen:"",
     destino:"Brasil",
     hotel:"Rio de Janeiro",
@@ -34,7 +34,7 @@ const dataFrom = [
     boton:{boton}
     },
     {
-    id:"4",
+    id: 4 ,
     imagen:"",
     destino:"Italia",
     hotel:"",
@@ -43,7 +43,7 @@ const dataFrom = [
     boton:{boton},
     },
     {
-    id:"5",
+    id: 5 ,
     imagen:"",
     destino:"Estados Unidos",
     lugar:"California",
@@ -53,7 +53,7 @@ const dataFrom = [
     boton:{boton}
     },
     {
-        id:"6",
+        id: 6 ,
         imagen:"",
         destino:"China",
         lugar:"",
@@ -63,7 +63,7 @@ const dataFrom = [
         boton:{boton}
         },
     {
-        id:"7",
+        id: 7 ,
         imagen:"",
         destino:"España",
         lugar:"Barcelona",
@@ -73,8 +73,8 @@ const dataFrom = [
         boton:{boton}
     },
     {
-        id:"8",
-        imagen:"",
+        id: 8 ,
+        imagen: "uruguay.jpg",
         destino:"Venezuela",
         lugar:"",
         hotel:"",
@@ -83,14 +83,15 @@ const dataFrom = [
         boton:{boton}
     },
     {
-        id:"9",
-        imagen:"Uruguay",
+        id: 9 ,
+        imagen:"uruguay.jpg",
         lugar:"Montevideo",
-        destino:"California",
-        hotel:"",
-        excursiones:"Disney",
-        precio:"750.000$",
-        boton:{boton}
+        destino:"Uruguay",
+        hotel:"RocaMar",
+        excursiones:"Recorrido turístico por bodega y cata de vinos",
+        precio:"100.000$",
+        boton:{boton},
+        detalles:"Viaje estimado para el mes de noviembre del 2022, tiene una duracion de 7 noches y 8 dias, incluyendo el recorrido que se realiza por Bus semicama con la empresa de Buquebus, ademas que el hotel incluye desayuno y merienda  "
     },
 ];
 

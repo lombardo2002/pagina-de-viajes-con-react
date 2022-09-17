@@ -1,10 +1,12 @@
 import { useState } from "react";
 import ItemCount from "./ItemCount";
 
+
 const ItemDetail = ({data}) => {
     const [pasajes, setPasajeros] = useState(0);
+
     const agregar = () =>{
-        if (pasajes <=5){
+        if (pasajes <=20){
 
         }else setPasajeros(pasajes-1);
     }
@@ -19,10 +21,13 @@ const ItemDetail = ({data}) => {
     }
 
     return (
-        <div className="Imagen-container">
+        <div className="Imagen-container2">
             <div>
-            <h1>{data.destino}</h1>
-            <img src={data.imagen}/>
+            <h1 className="destino-css">{data.destino}</h1>
+            <p className="lugar-css">{data.lugar}</p>
+            <img className="imagen-css" src={data.imagen}/>
+            <p className="hospedaje">Hospedaje en Hotel:{data.hotel}</p>
+            <p className="hospedaje">Excursion:{data.excursiones}</p>
             <ItemCount
             data={data}
             sumar={sumar}
@@ -31,10 +36,10 @@ const ItemDetail = ({data}) => {
             agregar={agregar}
             />
             </div>
-            <div>
+            <div className="precio-css">
                 <h3>${data.precio}</h3>
-                <p>Quedan {data.stock}{data.pasajes} disponibles.</p>
             </div>
+            <button className="botones-css" onClick={data.detalles}>Ver mas detalles</button>
         </div>
     );
 }

@@ -20,6 +20,7 @@ const Imagenes = () => {
                 excursiones={data.excursiones}
                 precio={data.precio}
                 boton={data.boton}
+                pasajes={data.pasajes}
                 />
             ))
         }

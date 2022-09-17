@@ -24,14 +24,15 @@ const ItemCount=({destino}) =>{
         }
     }
 
+
     return(
         <>
         <h3>{destino}</h3>
 
-        <button onClick={suma}>+</button>
+        <button className="botones-css" onClick={suma}>+</button>
         <span>{pasajes}</span>
-        <button onClick={resta}>-</button>
-        <button onClick={agregar}>Elejir paquete.</button>
+        <button className="botones-css" onClick={resta}>-</button>
+        <button className="botones-css" onClick={agregar}>Elejir paquete.</button>
         </>
     )
 }

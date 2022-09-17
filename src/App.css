@@ -30,3 +30,20 @@ header{
   box-shadow: 0 1px 2rem rgb(58, 58, 248);
   padding-bottom: 1rem;
 }
+
+
+.imagen-css{
+  width: 750px;
+  height: 500px;
+}
+
+.botones-css{
+  text-decoration: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #1883ba;
+  border-radius: 6px;
+  border: 2px solid #0016b0;
+}
