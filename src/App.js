@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer"
+
 
 
 const App = () => {

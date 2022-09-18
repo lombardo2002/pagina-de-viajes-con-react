@@ -1,38 +1,47 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import "../App.css"
 
-const ItemCount=({destino}) =>{
+const ItemCount=({ stock = 5, initial = 1, onAdd}) =>{
 
-    const[pasajes, setPasajeros] = useState(0);
+    const[pasajes, setPasajeros] = useState(initial);
+
+    useEffect(() => {
+        setPasajeros(initial);
+    },[]);
 
     const suma=()=>{
-        if(pasajes<5){
-            setPasajeros(pasajes+1)}
+        if(pasajes<stock){
+            setPasajeros(pasajes+1);
+            console.log("sumaste una persona mas a tu viaje")
+        }
     }
 
     const resta=()=>{
-        if (pasajes >=1){
-            setPasajeros(pasajes-1)}
-    }
-
-    const agregar = () => {
-        setPasajeros (pasajes);
-        
-        if(pasajes !==0){
-            alert(`Cantidad de personas que viajan:${pasajes}`)
-            setPasajeros(1);
+        if (pasajes > initial){
+            setPasajeros(pasajes-1);
+            console.log("sacaste cosas del carrito")
         }
     }
+
+    const elejirPaquete = () =>{
+        setPasajeros(stock)
+        console.log("Me agregue al carrito")
+    }
+
+
 
 
     return(
         <>
-        <h3>{destino}</h3>
 
-        <button className="botones-css" onClick={suma}>+</button>
+        <button className="botones-css" onClick={() => suma()}>+</button>
         <span>{pasajes}</span>
-        <button className="botones-css" onClick={resta}>-</button>
-        <button className="botones-css" onClick={agregar}>Elejir paquete.</button>
+        <button className="botones-css" onClick={() => resta}>-</button>
+        {
+                stock
+                ? <button className="botones-css"  onClick={() => onAdd(pasajes)}>Add to Cart</button>
+                : <button className="botones-css" onClick={elejirPaquete}>Elejir Paquete</button>
+        }
         </>
     )
 }
