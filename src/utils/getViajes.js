@@ -3,7 +3,7 @@ const boton = (id) => {
     console.log(`paquete elejido ${id}`);
 }
 
-const dataFrom = [
+export const dataFrom = [
     {
     id:1 ,
     imagen:"cataratasdeliguazu.jpg",

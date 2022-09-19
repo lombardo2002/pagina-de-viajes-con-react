@@ -22,8 +22,8 @@ const Navbar = () => {
             <li className="nav-item">
                 <Link to="/category/5" className="nav-link" href="#">Destinos Para Invierno</Link>
             </li>
-            <li to="/categoria/2" className="nav-item">
-                <a className="nav-link" href="#">Destinos Para Verano</a>
+            <li className="nav-item">
+                <Link to="/category/2" className="nav-link" href="#">Destinos Para Verano</Link>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#">Rebajas</a>
