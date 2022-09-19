@@ -7,9 +7,9 @@ const { dataFrom } = require("../utils/getViajes")
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
-    const { idData } = useParams();
+    const { idItem } = useParams();
     useEffect(() => {
-        customFetch(2000, dataFrom.find(data => data.id === parseInt(idData))) 
+        customFetch(2000, dataFrom.find(item => item.id === parseInt(idItem))) 
             .then(result => setData(result[10]))
             .catch(err => console.log(err))
     }, []);

@@ -14,7 +14,8 @@ const dataFrom = [
     excursiones:"Cataratas de Iguazú",
     precio:"50.000$",
     boton:{boton},
-    categoriaId:{
+    categoryId: 2,
+    category:{
         estacion: "verano",
         id:2
     }
@@ -29,7 +30,8 @@ const dataFrom = [
     excursiones:"",
     precio:"350.000$",
     boton:{boton},
-    categoriaId:{
+    categoryId: 5,
+    category:{
         estacion: "invierno",
         id:5
     }
@@ -43,7 +45,8 @@ const dataFrom = [
     excursiones:"Playas de Rio",
     precio:"150.000$",
     boton:{boton},
-    categoriaId:{
+    categoryId: 2,
+    category:{
         estacion: "verano",
         id:2
     }
@@ -57,7 +60,8 @@ const dataFrom = [
     excursiones:"Torre de Pizza",
     precio:"500.000$",
     boton:{boton},
-    categoriaId:{
+    categoryId: 5,
+    category:{
         estacion: "invierno",
         id:5
     }
@@ -72,7 +76,8 @@ const dataFrom = [
     excursiones:"Disney",
     precio:"750.000$",
     boton:{boton},
-    categoriaId:{
+    categoryId: 2,
+    category:{
         estacion: "verano",
         id:2
     }
@@ -87,7 +92,8 @@ const dataFrom = [
         excursiones:"Disney",
         precio:"750.000$",
         boton:{boton},
-        categoriaId:{
+        categoryId: 2,
+        category:{
             estacion: "verano",
             id:2
         }
@@ -102,7 +108,8 @@ const dataFrom = [
         excursiones:"Disney",
         precio:"750.000$",
         boton:{boton},
-        categoriaId:{
+        categoryId: 2,
+        category:{
             estacion: "verano",
             id:2
         }
@@ -117,7 +124,8 @@ const dataFrom = [
         excursiones:"Disney",
         precio:"750.000$",
         boton:{boton},
-        categoriaId:{
+        categoryId: 2,
+        category:{
             estacion: "verano",
             id:2
         }
@@ -132,7 +140,8 @@ const dataFrom = [
         excursiones:"Recorrido turístico por bodega y cata de vinos",
         precio:"100.000$",
         boton:{boton},
-        categoriaId:{
+        categoryId: 5,
+        category:{
             estacion: "invierno",
             id:5
         }
@@ -147,7 +156,8 @@ const dataFrom = [
         excursiones:"Recorrido turístico por bodega y cata de vinos",
         precio:"100.000$",
         boton:{boton},
-        categoriaId:{
+        categoryId: 5,
+        category:{
             estacion: "invierno",
             id:5
         }

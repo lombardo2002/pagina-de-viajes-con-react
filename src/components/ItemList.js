@@ -1,10 +1,10 @@
 import Item from "./Item";
-    const ItemList = ({ destino }) => {
+    const ItemList = ({ items }) => {
         return (
             <>
             {
-            destino
-            ? destino.map(data => <Item key={destino.id} destinos={destino.lugar}/>)
+            items
+            ? items.map(item => <Item key={item.id} destinos={item.lugar}/>)
             : <p>Cargando...</p>
             }
             </>

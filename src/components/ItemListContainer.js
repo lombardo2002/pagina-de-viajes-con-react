@@ -1,28 +1,26 @@
-import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import ItemCount from "./ItemCount";
 import customFetch from "../utils/customFetch"
 import ItemList from "./ItemList";
+import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 const { dataFrom } = require("../utils/getViajes.js")
 
 
-const ItemListContainer = (props) => {
+const ItemListContainer = () => {
 
     const [datos, setDatos] = useState([]);
-    const { id } = useParams();
+    const { idCategory } = useParams();
 
+    console.log(idCategory);
 
 useEffect(() => {
-    if (id){
-        customFetch(2000, dataFrom.filter(item => item.categoriaId == id))
+        customFetch(2000, dataFrom.filter(item => {
+            if (idCategory === undefined) return item;
+            return item.categoryId === parseInt(idCategory)
+        }))
             .then(result => setDatos(result))
             .catch(err => console.log(err))
-        } else {
-            customFetch(2000, dataFrom)
-            .then(result => setDatos(result))
-            .catch(err => console.log(err))
-        }
-    }, [id]);
+    }, [datos]);
 
     const onAdd = (cantidad) => {
         alert(`Se agregaron ${cantidad} de pasajes al carrito`)
