@@ -1,17 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom"; 
 
-const Item = ({destino}) => {
+const Item = ({id, lugar, precio, hotel, excursiones, img, destino}) => {
     return (
         <>
         <div className="cardsViajes">
-            <img src={destino.img} alt=""/>
+            <img src={img} alt=""/>
             <div>
-                <h3>{destino.destino}</h3>
-                <p>lugar:{destino.lugar}</p>
-                <p>Hotel:{destino.hotel}</p>
-                <p>Excursión:{destino.excursiones}</p>
-                <p>Precio ${destino.precio}</p>
+                <h3>{destino}</h3>
+                <p>lugar:{lugar}</p>
+                <p>Hotel:{hotel}</p>
+                <p>Excursión:{excursiones}</p>
+                <p>Precio ${precio}</p>
                 <button className="button">Ver mas detalles</button>
+                <Link to={`/item/${id}`}>Details</Link>
             </div>
         </div>
         </>

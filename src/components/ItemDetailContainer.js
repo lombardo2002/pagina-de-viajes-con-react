@@ -1,23 +1,22 @@
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import getList from "../utils/getViajes"
-import ItemListContainer from "./ItemListContainer";
+import customFetch from "../utils/customFetch"
+const { dataFrom } = require("../utils/getViajes")
 
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
-    const [cargando, setCargando] = useState(false)
+    const { idData } = useParams();
     useEffect(() => {
-        getList() 
-            .then(result => setData(result[8]))
+        customFetch(2000, dataFrom.find(data => data.id === parseInt(idData))) 
+            .then(result => setData(result[10]))
             .catch(err => console.log(err))
-            .finally(() => setCargando(false))
     }, []);
 
     return(
         <>
-        <ItemListContainer/>
-        {cargando ? <cargando/> : <ItemDetail data={data}/>}
+        <ItemDetail item={data}/>
         </>
     );
 }

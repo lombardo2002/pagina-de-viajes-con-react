@@ -1,8 +1,12 @@
 import Item from "./Item";
-    const ItemList = ({ destinos }) => {
+    const ItemList = ({ destino }) => {
         return (
             <>
-            {destinos.map((destino) => <Item key={destino.id} destino={destino}/>)}
+            {
+            destino
+            ? destino.map(data => <Item key={destino.id} destinos={destino.lugar}/>)
+            : <p>Cargando...</p>
+            }
             </>
         );
     }
