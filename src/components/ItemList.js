@@ -4,7 +4,7 @@ import Item from "./Item";
             <>
             {
             items
-            ? items.map(item => <Item key={item.id} destinos={item.lugar}/>)
+            ? items.map(item => <Item key={item.id} item={item}/>)
             : <p>Cargando...</p>
             }
             </>

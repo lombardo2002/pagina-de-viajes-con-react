@@ -1,70 +1,50 @@
 
-const boton = (id) => {
-    console.log(`paquete elejido ${id}`);
-}
-
 export const dataFrom = [
     {
     id:1 ,
     imagen:"cataratasdeliguazu.jpg",
     destino:"Misiones",
-    lugar:"Provincia de Misiones",
-    hotel:"Los Amigos",
+    lugar:"Cataratas del Igúazu",
+    hotel:"'Los Amigos' incluye desayuno y merienda, cuenta con cochera, piscina, vista a las amazonas, ademas de una suit con RotServis",
     stock: 50,
-    excursiones:"Cataratas de Iguazú",
+    excursiones:"Tendras la maravillosa experiencia de conocer una de las 7 maravillas del mundo, Las Cataratas del Igúazu, con tour por el parque nacional, lleno de selva y naturaleza",
     precio:"50.000$",
-    boton:{boton},
     categoryId: 2,
-    category:{
-        estacion: "verano",
-        id:2
-    }
+    descuento: true
     },
     {
     id:2 ,
     imagen:"ushuaia.jpg",
     destino:"Tierra del Fuego",
-    lugar:"",
-    hotel:"Chaparros",
+    lugar:"Ushuaia",
+    hotel:"'Chaparros' este increible hotel cuenta con calefaccion en todas las habitaciones, desayuno incluido + restaurat gourmet dentro del hotel",
     stock: 50,
-    excursiones:"",
-    precio:"350.000$",
-    boton:{boton},
+    excursiones:"Paseo con pinguinos en la isla Martillo y merienda en el mitador Bella Vista",
+    precio:"70.000$",
     categoryId: 5,
-    category:{
-        estacion: "invierno",
-        id:5
-    }
+    descuento: false
     },
     {
     id: 3 ,
     imagen:"jujuy7colores.jpg",
     destino:"Jujuy",
-    hotel:"Rio de Janeiro",
+    lugar:"Purmamarca",
+    hotel:"'Marianitos' cuenta con cena, terraza y piscina incluida + cochera",
     stock: 50,
-    excursiones:"Playas de Rio",
+    excursiones:"Tour por 'El cerro de los 7 colores'",
     precio:"150.000$",
-    boton:{boton},
     categoryId: 2,
-    category:{
-        estacion: "verano",
-        id:2
-    }
     },
     {
     id: 4 ,
     imagen:"mendozaAconcagua.jpg",
     destino:"Mendoza",
-    hotel:"",
+    lugar:"Aconcagua",
+    hotel:"'Oeste' este hotel cuenta con calefaccion en todas las habitaciones, routservis y desayuno incluido de 7am y 10:30am ",
     stock: 50,
-    excursiones:"Torre de Pizza",
+    excursiones:"Paseo en bus por el parque provincial del Aconcagua, con hermosa vista a las montañas y una merienda incluida en el mirador que ahi mismo se encuentra ",
     precio:"500.000$",
-    boton:{boton},
     categoryId: 5,
-    category:{
-        estacion: "invierno",
-        id:5
-    }
     },
     {
     id: 5 ,
@@ -75,101 +55,64 @@ export const dataFrom = [
     stock: 50,
     excursiones:"Disney",
     precio:"750.000$",
-    boton:{boton},
     categoryId: 2,
-    category:{
-        estacion: "verano",
-        id:2
-    }
     },
     {
-        id: 6 ,
-        imagen:"cordoba.jpg",
-        destino:"Cordoba",
-        lugar:"",
-        hotel:"",
-        stock: 50,
-        excursiones:"Disney",
-        precio:"750.000$",
-        boton:{boton},
-        categoryId: 2,
-        category:{
-            estacion: "verano",
-            id:2
-        }
-        },
-    {
-        id: 7 ,
-        imagen:"buenosAires.jpg",
-        destino:"Buenos Aires",
-        lugar:"Barcelona",
-        hotel:"",
-        stock: 50,
-        excursiones:"Disney",
-        precio:"750.000$",
-        boton:{boton},
-        categoryId: 2,
-        category:{
-            estacion: "verano",
-            id:2
-        }
+    id: 6 ,
+    imagen:"cordoba.jpg",
+    destino:"Cordoba",
+    lugar:"",
+    hotel:"",
+    stock: 50,
+    excursiones:"Disney",
+    precio:"750.000$",
+    categoryId: 2,
     },
     {
-        id: 8 ,
-        imagen: "termas-entrerios.jpg",
-        destino:"Entre Rios",
-        lugar:"",
-        hotel:"",
-        stock: 50,
-        excursiones:"Disney",
-        precio:"750.000$",
-        boton:{boton},
-        categoryId: 2,
-        category:{
-            estacion: "verano",
-            id:2
-        }
+    id: 7 ,
+    imagen:"buenosAires.jpg",
+    destino:"Buenos Aires",
+    lugar:"Barcelona",
+    hotel:"",
+    stock: 50,
+    excursiones:"Disney",
+    precio:"750.000$",
+    categoryId: 2,
     },
     {
-        id: 9 ,
-        imagen:"peritomoreno.jpg",
-        lugar:"Glaciar Perito Moreno",
-        destino:"Santa Cruz",
-        hotel:"RocaMar",
-        stock: 50,
-        excursiones:"Recorrido turístico por bodega y cata de vinos",
-        precio:"100.000$",
-        boton:{boton},
-        categoryId: 5,
-        category:{
-            estacion: "invierno",
-            id:5
-        }
+    id: 8 ,
+    imagen: "termas-entrerios.jpg",
+    destino:"Entre Rios",
+    lugar:"",
+    hotel:"",
+    stock: 50,
+    excursiones:"Disney",
+    precio:"750.000$",
+    categoryId: 2,
     },
     {
-        id: 10 ,
-        imagen:"bariloche2.jpg",
-        lugar:"Rio Negro",
-        destino:"Rio Negro",
-        hotel:"RocaMar",
-        stock: 50,
-        excursiones:"Recorrido turístico por bodega y cata de vinos",
-        precio:"100.000$",
-        boton:{boton},
-        categoryId: 5,
-        category:{
-            estacion: "invierno",
-            id:5
-        }
+    id: 9 ,
+    imagen:"peritomoreno.jpg",
+    lugar:"Glaciar Perito Moreno",
+    destino:"Santa Cruz",
+    hotel:"RocaMar",
+    stock: 50,
+    excursiones:"Recorrido turístico por bodega y cata de vinos",
+    precio:"100.000$",
+    categoryId: 8,
+    },
+    {
+    id: 10 ,
+    imagen:"bariloche2.jpg",
+    lugar:"Rio Negro",
+    destino:"Rio Negro",
+    hotel:"RocaMar",
+    stock: 50,
+    excursiones:"Recorrido turístico por bodega y cata de vinos",
+    precio:"100.000$",
+    categoryId: 8,
     },
 ];
 
-const getList = () => {
-    return new Promise ((resolve, reject) =>{
-        setTimeout(() =>{
-            resolve(dataFrom);
-        }, 2000)
-    })
-}  
 
-export default getList;
+export default dataFrom;

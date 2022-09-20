@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Imagen from "../components/imagen";
+import { getList } from "../utils/getViajes";
 
 
 const Imagenes = () => {
@@ -9,18 +10,18 @@ const Imagenes = () => {
     return(
         <>
         {
-            getList.map(data => (
+            getList.map(item => (
                 <Imagen
-                key={data.id}
-                id={data.id}
-                imagen={data.imagen}
-                destino={data.destino}
-                lugar={data.lugar}
-                hotel={data.hotel}
-                excursiones={data.excursiones}
-                precio={data.precio}
-                boton={data.boton}
-                pasajes={data.pasajes}
+                key={item.id}
+                id={item.id}
+                imagen={item.imagen}
+                destino={item.destino}
+                lugar={item.lugar}
+                hotel={item.hotel}
+                excursiones={item.excursiones}
+                precio={item.precio}
+                boton={item.boton}
+                pasajes={item.pasajes}
                 />
             ))
         }

@@ -7,7 +7,7 @@ const Navbar = () => {
         <header>
         <nav className="navbar navbar-dark bg-primary">
     <div className="container-fluid">
-        <a className="navbar-brand" href="#">Disfruta Viajando</a>
+        <Link to="/" className="navbar-brand">Disfruta Viajando</Link>
         <div>
             <CartWidget/>
         </div>
@@ -17,16 +17,16 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarText">
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">Inicio</a>
+                <Link to="/" className="nav-link active" aria-current="page" href="#">Inicio</Link>
             </li>
             <li className="nav-item">
-                <Link to="/category/5" className="nav-link" href="#">Destinos Para Invierno</Link>
+                <Link to="/category/5" className="nav-link">Destinos Para Invierno</Link>
             </li>
             <li className="nav-item">
-                <Link to="/category/2" className="nav-link" href="#">Destinos Para Verano</Link>
+                <Link to="/category/2" className="nav-link">Destinos Para Verano</Link>
             </li>
             <li className="nav-item">
-                <a className="nav-link" href="#">Rebajas</a>
+                <Link to="/category/8" className="nav-link">Rebajas</Link>
             </li>
         </ul>
         <span className="navbar-text">

@@ -1,3 +1,7 @@
+body{
+  background-color: black ;
+}
+
 header{
   height: 80px;
 }
@@ -11,30 +15,40 @@ header{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px 30px;
-  border-color: black;
 }
 
-.imagen-info{
-  width: 80%;
-  height: 100px;
-}
 
 .cardsViajes{
+  display: flex;
+  padding: 20px;
   margin: 1rem 0;
-  width: 30rem;
-  background: rgb(10,252,255);
+  width: 40rem;
   background: linear-gradient(0deg, rgba(10,252,255,1) 0%, rgba(253,132,45,1) 100%);
   text-align: center;
-  border-radius: 2rem;
-  box-shadow: 0 1px 2rem rgb(58, 58, 248);
+  box-shadow: 0 1px 2rem rgb(28, 4, 240);
+  padding-bottom: 1rem;
+}
+
+.cardDestino{
+  display: flex;
+  padding: 20px;
+  margin: 1rem 0;
+  width: 70rem;
+  background: linear-gradient(0deg, rgba(10,252,255,1) 0%, rgba(253,132,45,1) 100%);
+  text-align: center;
+  box-shadow: 0 1px 2rem rgb(28, 4, 240);
   padding-bottom: 1rem;
 }
 
 
 .imagen-css{
-  width: 750px;
-  height: 500px;
+  width: 400px;
+  height: 300px;
+}
+
+.imagen-detalles{
+  width: 600px;
+  height: 600px;
 }
 
 .botones-css{
