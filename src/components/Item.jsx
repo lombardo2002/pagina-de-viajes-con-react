@@ -8,7 +8,8 @@ const Item = ({item}) => {
             <img className="imagen-css" src={"/" + item.imagen} alt=""/>
             <div>
                 <h3>{item.destino}</h3>
-                <p className="letras">lugar:{item.lugar}</p>
+                <p className="letras">Lugar:{item.lugar}</p>
+                <p className="letras">Estadía:{item.estadia}</p>
                 <p className="letras">Precio ${item.precio}</p>
                 <Link to={`/item/${item.id}`} className="botones-css">Detalles</Link>
             </div>
