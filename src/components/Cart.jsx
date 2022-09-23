@@ -9,7 +9,7 @@ const Cart = () => {
             <h1 className="cart" >Hola, soy carrito </h1>
             <button className="botones-css" onClick={clear}>Eliminar todos los destinos</button>
             {
-                cartList.map(item => <li>{item.destino}{item.precio}{item.lugar}</li>)
+                cartList.map(item => <li className="carrito">{item.destino}{item.precio}{item.lugar}<button>Eliminar Destino</button></li>)
             }
         </>
     );

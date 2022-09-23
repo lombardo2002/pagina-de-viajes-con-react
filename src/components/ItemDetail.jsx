@@ -9,7 +9,6 @@ const ItemDetail = ({item}) => {
     const { addItem } = useContext(cartContext);
 
     const onAdd = (cantidad) => {
-        alert(`Se agregaron ${cantidad} de pasajes al carrito`);
         setItemCount(cantidad);
         addItem(item, cantidad)
     }
