@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="container-fluid">
         <Link to="/" className="navbar-brand">Disfruta Viajando</Link>
         <div>
-            <CartWidget/>
+            <Link to="/cart" className="icono-carrito"><CartWidget/></Link>
         </div>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
