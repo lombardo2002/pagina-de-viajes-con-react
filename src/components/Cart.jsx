@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { cartContext } from "./CartContext";
 
 const Cart = () => {
-    const { cartList, clear, removeItem } = useContext(cartContext);
+    const { cartList, clear, removeItem, calcTotalPorItem, calcSubTotal, calcItemsCantidad} = useContext(cartContext);
 
     return (
         <>
@@ -25,6 +25,17 @@ const Cart = () => {
                                 <button onClick={() => removeItem(destino.id)} className="botones-css" type="submit">Eliminar Paquete</button>
                             </div>
                             </div>
+                        </div>
+                        <div>
+                            <h2>
+                                {calcTotalPorItem}
+                            </h2>
+                            <h3>
+                                {calcSubTotal}
+                            </h3>
+                            <h4>
+                                {calcItemsCantidad}
+                            </h4>
                         </div>
                     </div>
                     )
