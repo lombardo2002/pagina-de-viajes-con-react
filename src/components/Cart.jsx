@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { cartContext } from "./CartContext";
 
 const Cart = () => {
-    const { cartList, clear, removeItem, calcTotalPorItem, calcSubTotal, calcItemsCantidad} = useContext(cartContext);
+    const { cartList, clear, removeItem } = useContext(cartContext);
 
     return (
         <>
@@ -10,8 +10,8 @@ const Cart = () => {
             <button className="botones-css" onClick={clear}>Eliminar todos los destinos</button>
             {
                 cartList.map(destino => 
-                    <div className="carrito-d">
-                        <div key={destino.id}>
+                    <div className="carrito-d" key={destino.id}>
+                        <div>
                             <div>
                             <div className="carrito">
                                 <img className="img-cart" src={destino.imagen} alt={destino.destino}/>
@@ -25,17 +25,6 @@ const Cart = () => {
                                 <button onClick={() => removeItem(destino.id)} className="botones-css" type="submit">Eliminar Paquete</button>
                             </div>
                             </div>
-                        </div>
-                        <div>
-                            <h2>
-                                {calcTotalPorItem}
-                            </h2>
-                            <h3>
-                                {calcSubTotal}
-                            </h3>
-                            <h4>
-                                {calcItemsCantidad}
-                            </h4>
                         </div>
                     </div>
                     )
