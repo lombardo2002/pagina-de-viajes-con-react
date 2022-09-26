@@ -16,18 +16,23 @@ const CartContextProvider = ({children}) => {
     }
 
     const calcTotalPorItem = (idItem) => {
-        let index = cartList.map(item => item.idItem).indexOf(idItem);
-        return cartList[index].costItem * cartList[index].cantidadItem;
+        let index = cartList.map(item => item.idItem == idItem).indexOf(idItem);
+        return cartList[index].precio * cartList[index].cantidad;
     }
 
-    const calcSubTotal = () => {
-        let totalPorItem = cartList.map(item => calcTotalPorItem(item.idItem));
+    const calcSubTotal = () => { // Precio total
+        let totalPorItem = cartList.map(item => calcTotalPorItem(item.id));
+        console.log(totalPorItem)
         return totalPorItem.reduce((previousValue, currentValue) => previousValue + currentValue);
     }
 
     const calcItemsCantidad = () => {
-        let cantidad = cartList.map(item => item.cantidadItem);
+        let cantidad = cartList.map(item => item.cantidad);
         return cantidad.reduce(((previousValue, currentValue) => previousValue + currentValue), 0);
+    }
+
+    const precioFinal = () => {
+        return cartList.reduce((previousValue, acumulativo) => previousValue + (acumulativo.precio*acumulativo.cantidad), 0);
     }
 
     const IsInCart = (id) => cartList.find(destino => destino.id === parseInt(id)) ? true : false;
@@ -39,11 +44,10 @@ const CartContextProvider = ({children}) => {
     }
 
     return (
-        <cartContext.Provider value={{cartList, addItem, clear, IsInCart, removeItem, calcTotalPorItem, calcSubTotal, calcItemsCantidad}} >
+        <cartContext.Provider value={{cartList, addItem, clear, IsInCart, removeItem, calcTotalPorItem, calcSubTotal, calcItemsCantidad, precioFinal}} >
             {children}
         </cartContext.Provider>
     );
 }
 
 export default CartContextProvider;
-

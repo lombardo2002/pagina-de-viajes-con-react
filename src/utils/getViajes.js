@@ -9,7 +9,7 @@ export const dataFrom = [
     hotel:"'Los Amigos' incluye desayuno y merienda, cuenta con cochera, piscina, vista a las amazonas, ademas de una suit con RotServis",
     stock: 50,
     excursiones:"Tendras la maravillosa experiencia de conocer una de las 7 maravillas del mundo, Las Cataratas del Igúazu, con tour por el parque nacional, lleno de selva y naturaleza",
-    precio:"130.000$",
+    precio:130000,
     categoryId: 2,
     descuento: true
     },
@@ -22,7 +22,7 @@ export const dataFrom = [
     hotel:"'Chaparros' este increible hotel cuenta con calefaccion en todas las habitaciones, desayuno incluido + restaurat gourmet dentro del hotel",
     stock: 50,
     excursiones:"Paseo con pinguinos en la isla Martillo y merienda en el mitador Bella Vista",
-    precio:"150.000$",
+    precio:150000,
     categoryId: 5,
     descuento: false
     },
@@ -35,7 +35,7 @@ export const dataFrom = [
     hotel:"'Marianitos' cuenta con cena, terraza y piscina incluida + cochera",
     stock: 50,
     excursiones:"Tour por 'El cerro de los 7 colores'",
-    precio:"100.000$",
+    precio:100000,
     categoryId: 8,
     },
     {
@@ -47,7 +47,7 @@ export const dataFrom = [
     hotel:"'Oeste' este hotel cuenta con calefaccion en todas las habitaciones, routservis y desayuno incluido de 7am y 10:30am ",
     stock: 50,
     excursiones:"Paseo en bus por el parque provincial del Aconcagua, con hermosa vista a las montañas y una merienda incluida en el mirador que ahi mismo se encuentra ",
-    precio:"115.000$",
+    precio:115000,
     categoryId: 8,
     },
     {
@@ -59,7 +59,7 @@ export const dataFrom = [
     hotel:"Salinas Grandes",
     stock: 50,
     excursiones:"Visita al desierto de las salinas, este desierto posee cinco y diez millones de años cuando la cuenca se cubrió por completo de aguas provenientes de un volcán. ",
-    precio:"100.000$",
+    precio:100000,
     categoryId: 2,
     },
     {
@@ -71,7 +71,7 @@ export const dataFrom = [
     hotel:"Luxom",
     stock: 50,
     excursiones:"Tour por el camino de las 100 curvas en bus, con comida incluida en el complejo 'Rowser'",
-    precio:"80.000$",
+    precio:80000,
     categoryId: 2,
     },
     {
@@ -83,7 +83,7 @@ export const dataFrom = [
     hotel:"9 de Julio",
     stock: 50,
     excursiones:"Tour por la hermosa ciudad de Buenos Aires, visitas nocturnas a los mejores Bares por al rededor de el hermoso Obelisco y tures matutinos opcionales para conocer maravillosos lugares como el teatro colon que ahi mismo se encuentra",
-    precio:"60.000$",
+    precio:60000,
     categoryId: 2,
     },
     {
@@ -95,7 +95,7 @@ export const dataFrom = [
     hotel:"Kanji-Home.spa",
     stock: 50,
     excursiones:"Completo 'Las Termas' cuenta con 4 incleibles piletas climatizadas, que permite su vicita ent odas las estaciones del año, ademas de que cuneta con un spa para relajarte, masajes y zauna",
-    precio:"70.000$",
+    precio:70000,
     categoryId: 8,
     },
     {
@@ -107,7 +107,7 @@ export const dataFrom = [
     hotel:"Kilton",
     stock: 50,
     excursiones:"Tour por el impresionante glaciar de Perito Moreno, disfruta de esta hermosa vista mas la compañia de los lobos marinos que se acercan al parque nacional",
-    precio:"160.000$",
+    precio:160000,
     categoryId: 5,
     },
     {
@@ -119,7 +119,7 @@ export const dataFrom = [
     hotel:"RocaMar",
     stock: 50,
     excursiones:"Circuito chico, un completo de diversion donde bajas por un tobogan con una tabla de madera con regulación de velocidad, más merienda en el mismo completo en lo alto del lugar con vista a las maravillosas montañas y rio Nahuel Guapi ",
-    precio:"120.000$",
+    precio:120000,
     categoryId: 5,
     },
 ];

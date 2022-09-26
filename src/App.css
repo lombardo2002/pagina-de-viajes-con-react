@@ -94,6 +94,25 @@ header{
   height: 100px;
 }
 
-.icono-carrito{
+
+.icono-carrito {
   color: black;
+  position: relative;
+}
+
+.pNumeroCarrito {
+  position: absolute;
+  top: -60%;
+  left: 75%;
+}
+
+.precio-final{
+  padding: 20px;
+  margin: 1rem 0;
+  height: 10rem;
+  width: 30rem;
+  background: black;
+  text-align: center;
+  box-shadow: 0 1px 2rem rgb(28, 4, 240);
+  padding-bottom: 1rem;
 }
