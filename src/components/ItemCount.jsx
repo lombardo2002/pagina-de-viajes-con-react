@@ -12,20 +12,17 @@ const ItemCount=({ stock, initial, onAdd}) =>{
     const suma=()=>{
         if(pasajes<stock){
             setPasajes(pasajes+1);
-            console.log("sumaste una persona mas a tu viaje")
         }
     }
 
     const resta=()=>{
         if (pasajes > initial){
             setPasajes(pasajes-1);
-            console.log("sacaste cosas del carrito")
         }
     }
 
     const elejirPaquete = () =>{
         setPasajes(stock)
-        console.log("Me agregue al carrito")
     }
 
 
