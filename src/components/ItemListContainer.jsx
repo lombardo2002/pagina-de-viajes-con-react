@@ -1,8 +1,9 @@
-import customFetch from "../utils/customFetch"
 import ItemList from "./ItemList";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import  dataFrom  from "../utils/getViajes.js"
+import { collection, getDocs } from "firebase/firestore";
+import { db } from "../utils/firebaseConfig"
+import { async } from "@firebase/util";
 
 
 const ItemListContainer = () => {
@@ -11,16 +12,18 @@ const ItemListContainer = () => {
     const { idCategory } = useParams();
 
 useEffect(() => {
-    if(idCategory) {
-        customFetch(2000, dataFrom.filter(item => item.categoryId == idCategory))
+        const firestoreFetch = async() => {
+            const querySnapshot = await getDocs(collection(db, "destinations"));
+            const dataFromFirestore = querySnapshot.docs.map(document => ({
+                id: document.id,
+                ...document.data()
+            }))
+            return dataFromFirestore
+        }
+        firestoreFetch()
         .then(result => setItem(result))
-        .catch(err => console.log(err))
-    } else {
-        customFetch(2000, dataFrom)
-        .then(result => setItem(result))
-        .catch(err => console.log(err))
-    }
     }, [idCategory]);
+
 
     return (
         <>  

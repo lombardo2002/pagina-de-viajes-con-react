@@ -2,8 +2,8 @@
 export const dataFrom = [
     {
     id:1 ,
-    imagen:"cataratasdeliguazu.jpg",
     destino:"Misiones",
+    imagen:"cataratasdeliguazu.jpg",
     lugar:"Cataratas del Igúazu",
     estadia:" 4 dias y 3 noches.",
     hotel:"'Los Amigos' incluye desayuno y merienda, cuenta con cochera, piscina, vista a las amazonas, ademas de una suit con RotServis",
@@ -78,7 +78,7 @@ export const dataFrom = [
     id: 7 ,
     imagen:"buenosAires.jpg",
     destino:"Buenos Aires",
-    lugar:"Federal Capital",
+    lugar:"Capital Federal",
     estadia:" 4 dias y 3 noches.",
     hotel:"9 de Julio",
     stock: 50,
@@ -113,8 +113,8 @@ export const dataFrom = [
     {
     id: 10 ,
     imagen:"bariloche2.jpg",
-    lugar:"Rio Negro",
-    destino:"Bariloche",
+    lugar:"Bariloche",
+    destino:"Rio Negro",
     estadia:" 6 dias y 5 noches.",
     hotel:"RocaMar",
     stock: 50,
