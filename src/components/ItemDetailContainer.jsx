@@ -1,18 +1,23 @@
+import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "./ItemDetail";
-import customFetch from "../utils/customFetch"
-const { dataFrom } = require("../utils/getViajes")
+import { getDoc, doc } from "firebase/firestore";
+import { db } from "../utils/firebaseConfig"
 
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
-    const { idItem } = useParams();
+    const { id } = useParams();
     useEffect(() => {
-        customFetch(100, dataFrom.find(item => item.id === parseInt(idItem))) 
-            .then(result => setData(result))
-            .catch(err => console.log(err))
-    }, [idItem]);
+        const firestoreFetch = async () => {
+            const querySnapshot = await getDoc(doc(db, "destinations", id));
+            return {id: id, ...querySnapshot()}
+        }
+        firestoreFetch()
+        .then(result => setData(result.find(item => item.id == id)))
+        .catch(err => console.log(err))
+    }, [id]);
 
     return(
         <>
