@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
     const [data, setData] = useState({});
     const { idItem } = useParams();
     useEffect(() => {
-        const docRef = doc (db, "destinos", idItem);
+        const docRef = doc (db, "destinations", idItem);
         getDoc(docRef)
         .then(result => setData({
             id: result.id,
