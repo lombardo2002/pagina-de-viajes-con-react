@@ -8,16 +8,15 @@ import { db } from "../utils/firebaseConfig"
 
 const ItemDetailContainer = () => {
     const [data, setData] = useState({});
-    const { id } = useParams();
+    const { idItem } = useParams();
     useEffect(() => {
-        const firestoreFetch = async () => {
-            const querySnapshot = await getDoc(doc(db, "destinations", id));
-            return {id: id, ...querySnapshot()}
-        }
-        firestoreFetch()
-        .then(result => setData(result.find(item => item.id == id)))
-        .catch(err => console.log(err))
-    }, [id]);
+        const docRef = doc (db, "destinos", idItem);
+        getDoc(docRef)
+        .then(result => setData({
+            id: result.id,
+            ...result.data()
+        }))
+    }, [idItem]);
 
     return(
         <>
