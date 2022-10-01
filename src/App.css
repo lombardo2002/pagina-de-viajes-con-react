@@ -26,6 +26,8 @@ header{
   flex-wrap: wrap;
   padding: 20px;
   gap: 30;
+  display: flex;
+  justify-content: space-between;
 }
 
 .cardsViajes{
@@ -41,7 +43,6 @@ header{
 
 .cardDestino{
   display: flex;
-  justify-content: space-between;
   padding: 20px;
   margin: 1rem 0;
   width: 70rem;

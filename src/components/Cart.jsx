@@ -2,9 +2,28 @@
 import { useContext } from "react";
 import { cartContext } from "./CartContext";
 import { Link } from "react-router-dom";
+import { serverTimestamp, doc, setDoc, collection } from "firebase/firestore";
+import { db } from "../utils/firebaseConfig";
 
 const Cart = () => {
-    const { cartList, clear, removeItem, calcTotalPorItem, calcSubTotal, calcItemsCantidad, precioFinal} = useContext(cartContext);
+    const { cartList, clear, removeItem, precioFinal} = useContext(cartContext);
+
+    const createOrder = async () => {
+        let order = {
+            buyer: {
+                name: "Olivia",
+                email: "olivialiliana-l@gmail.com",
+                phone: "1145987623"
+            },
+            date: serverTimestamp(),
+            items: cartList,
+            total: precioFinal()
+        }
+        const newOrderRef = doc (collection(db, "orders"))
+        await setDoc(newOrderRef, order);
+
+        alert("Tu orden fue creada con exito  id: " + newOrderRef.id)
+    }
 
     if (cartList.length == 0) {
         return (
@@ -42,7 +61,7 @@ const Cart = () => {
             <div className="precio-final">
                 <h5 className="carrito">Precio final de los destinos seleccionados</h5>
                 <p className="carrito">${precioFinal()}</p>
-                <button className="botones-css">Finalizar compra</button>
+                <button className="botones-css" onClick={createOrder}>Finalizar compra</button>
             </div>
         </>
     );

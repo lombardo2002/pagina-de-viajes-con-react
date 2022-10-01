@@ -34,7 +34,7 @@ const ItemCount=({ stock, initial, onAdd}) =>{
         <button className="botones-css" onClick={() => resta()}>-</button>
         {
                 stock
-                ? <button className="botones-css"  onClick={() => onAdd(pasajes)}>Add to Cart</button>
+                ? <button className="botones-css"  onClick={() => onAdd(pasajes)}>Agregar Al Carrito</button>
                 : <button className="botones-css" onClick={elejirPaquete}>Elejir Paquete</button>
         }
         </>
