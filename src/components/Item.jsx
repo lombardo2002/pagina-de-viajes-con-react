@@ -5,7 +5,7 @@ const Item = ({item}) => {
     return (
         <>
         <div className="cardsViajes">
-            <img className="imagen-css" src={"/" + item.imagen} alt=""/>
+            <img className="imagen-css" src={item.imagen} alt=""/>
             <div>
                 <h3>{item.destino}</h3>
                 <p className="letras">Lugar:{item.lugar}</p>

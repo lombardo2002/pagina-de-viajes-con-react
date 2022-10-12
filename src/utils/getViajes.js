@@ -3,7 +3,7 @@ export const dataFrom = [
     {
     id:1 ,
     destino:"Misiones",
-    imagen:"cataratasdeliguazu.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/cataratasdeliguazu.jpg?alt=media&token=b038a9bd-5930-4173-878f-7f113b2b8eb0",
     lugar:"Cataratas del Igúazu",
     estadia:" 4 dias y 3 noches.",
     hotel:"'Los Amigos' incluye desayuno y merienda, cuenta con cochera, piscina, vista a las amazonas, ademas de una suit con RotServis",
@@ -15,7 +15,7 @@ export const dataFrom = [
     },
     {
     id:2 ,
-    imagen:"ushuaia.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/ushuaia.jpg?alt=media&token=9ce9d470-494a-4f2f-8280-99ac3db114ac ",
     destino:"Tierra del Fuego",
     lugar:"Ushuaia",
     estadia:" 5 dias y 4 noches.",
@@ -28,7 +28,7 @@ export const dataFrom = [
     },
     {
     id: 3 ,
-    imagen:"jujuy7colores.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/jujuy7colores.jpg?alt=media&token=2ce4ca23-79a6-4311-a603-a07ed1bec786 ",
     destino:"Jujuy",
     lugar:"Purmamarca",
     estadia:" 3 dias y 2 noches.",
@@ -40,7 +40,7 @@ export const dataFrom = [
     },
     {
     id: 4 ,
-    imagen:"mendozaAconcagua.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/mendozaAconcagua.jpg?alt=media&token=b37a050e-6dd2-45de-a341-a2819260d85a ",
     destino:"Mendoza",
     lugar:"Aconcagua",
     estadia:" 6 dias y 5 noches.",
@@ -52,7 +52,7 @@ export const dataFrom = [
     },
     {
     id: 5 ,
-    imagen:"jujuy.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/jujuy.jpg?alt=media&token=20e7945a-03e3-46f7-b66a-ce3611587a24",
     destino:"Jujuy",
     lugar:"California",
     estadia:" 3 dias y 2 noches.",
@@ -64,7 +64,7 @@ export const dataFrom = [
     },
     {
     id: 6 ,
-    imagen:"cordoba.jpg",
+    imagen:" https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/cordoba.jpg?alt=media&token=1a789139-4581-41a4-acf8-2a8935465e36",
     destino:"Cordoba",
     lugar:"Villa Carlos Paz",
     estadia:" 5 dias y 4 noches.",
@@ -76,7 +76,7 @@ export const dataFrom = [
     },
     {
     id: 7 ,
-    imagen:"buenosAires.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/buenosAires.jpg?alt=media&token=3ded7e75-c7a1-4e1a-9bc8-75c5bbf9f4b1",
     destino:"Buenos Aires",
     lugar:"Capital Federal",
     estadia:" 4 dias y 3 noches.",
@@ -88,7 +88,7 @@ export const dataFrom = [
     },
     {
     id: 8 ,
-    imagen: "termas-entrerios.jpg",
+    imagen: "https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/termas-entrerios.jpg?alt=media&token=ad394d19-998e-4ab8-97e4-5e08e1ae0962 ",
     destino:"Entre Rios",
     lugar:"Federación",
     estadia:" 3 dias y 2 noches.",
@@ -100,7 +100,7 @@ export const dataFrom = [
     },
     {
     id: 9 ,
-    imagen:"peritomoreno.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/peritomoreno.jpg?alt=media&token=4b730b36-0a60-493b-9dc7-4b1acdadcbf1 ",
     lugar:"Glaciar Perito Moreno",
     destino:"Santa Cruz",
     estadia:" 6 dias y 5 noches.",
@@ -112,7 +112,7 @@ export const dataFrom = [
     },
     {
     id: 10 ,
-    imagen:"bariloche2.jpg",
+    imagen:"https://firebasestorage.googleapis.com/v0/b/disfruta-viajando.appspot.com/o/bariloche2.jpg?alt=media&token=a443b3a8-3d34-4333-ba60-3218196812ac",
     lugar:"Bariloche",
     destino:"Rio Negro",
     estadia:" 6 dias y 5 noches.",
