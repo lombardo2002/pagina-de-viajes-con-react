@@ -25,7 +25,7 @@ const Cart = () => {
         alert("Tu orden fue creada con exito  id: " + newOrderRef.id)
     }
 
-    if (cartList.length == 0) {
+    if (cartList.length === 0) {
         return (
             <>
             <h1 className="cart" >Hola, soy carrito </h1>
