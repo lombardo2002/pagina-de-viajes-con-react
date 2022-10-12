@@ -16,7 +16,7 @@ const CartContextProvider = ({children}) => {
     }
 
     const calcTotalPorItem = (idItem) => {
-        let index = cartList.map(item => item.idItem == idItem).indexOf(idItem);
+        let index = cartList.map(item => item.idItem === idItem).indexOf(idItem);
         return cartList[index].precio * cartList[index].cantidad;
     }
 
@@ -37,7 +37,7 @@ const CartContextProvider = ({children}) => {
 
     const IsInCart = (id) => cartList.find(destino => destino.id === parseInt(id)) ? true : false;
 
-    const removeItem = (id) => setCartList(cartList.filter((destino) => destino.id !==id));
+    const removeItem = (id) => setCartList(cartList.filter((destino) => destino.id !== id));
 
     const clear = () =>{
         setCartList([])
