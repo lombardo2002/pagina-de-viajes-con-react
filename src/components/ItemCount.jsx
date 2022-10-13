@@ -1,13 +1,9 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import "../App.css"
 
 const ItemCount=({ stock, initial, onAdd}) =>{
 
     const[pasajes, setPasajes] = useState(initial);
-
-    useEffect(() => {
-        setPasajes(initial);
-    },[]);
 
     const suma=()=>{
         if(pasajes<stock){
